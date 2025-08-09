@@ -62,9 +62,6 @@ class PortfolioManager:
         self.lucro_vendas += (preco_venda - dados_acao["preco_medio"]) * quantidade
         dados_acao["quantidade"] -= quantidade
 
-        # Adiciona a transação de venda ao histórico do ativo
-        dados_acao["historico"].append('Venda', quantidade, preco_venda)
-
         if dados_acao["quantidade"] == 0:
             self.ativos.delete(codigo)
         else:
