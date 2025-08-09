@@ -70,6 +70,7 @@ Este arquivo usa a biblioteca **Streamlit** para criar uma interface web interat
 
 <img width="1908" height="826" alt="Snapshot_2025-08-09_18-28-15" src="https://github.com/user-attachments/assets/a9def1db-7b46-4be6-8e60-a7f1c4337975" />
 
+Para adição rápida de ativos a carteira com o objetivo de testar as funcionalidades, clique no botão do topo do dashboard "Adicionar alguns ativos a carteira automaticamente". 
 -----
 
 ## Como Executar o Projeto
