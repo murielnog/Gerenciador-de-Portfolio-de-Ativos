@@ -1,14 +1,14 @@
 # Gerenciador de Portfólio de Ativos
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
-Este projeto, desenvolvido para a disciplina de Estruturas de Dados e Algoritmos I, é uma aplicação interativa para gerenciamento de um portfólio de ações. A ferramenta permite ao usuário comprar e vender ativos, acompanhar o desempenho da carteira em tempo real e realizar análises técnicas básicas, tudo através de um dashboard web construído com Streamlit.
+Este projeto, desenvolvido para a disciplina de Estruturas de Dados e Algoritmos I, é uma aplicação interativa para gerenciamento de um portfólio de ações. A ferramenta permite ao usuário simular a compra e venda de ativos, acompanhar o desempenho da carteira em tempo real e realizar análises técnicas básicas, tudo através de um dashboard web construído com Streamlit.
 
 O grande diferencial deste projeto é a sua fundação: toda a gestão dos ativos da carteira é implementada com uma **Tabela Hash com Encadeamento Separado**, uma estrutura de dados criada do zero em Python.
 
 -----
 
-## A Estrutura de Dados no Coração do Sistema
+## As Estruturas de Dados Utilizadas
 
 O núcleo do gerenciador de portfólio é a forma como os ativos são armazenados e acessados. Para essa finalidade, foi implementada uma Tabela Hash , que utiliza o método de **Encadeamento Separado** para lidar com colisões.
 
@@ -34,7 +34,12 @@ Essa abordagem garante que as operações de busca (`get`), inserção (`put`) e
 
 O projeto é dividido em três arquivos principais que trabalham em conjunto.
 
-### 1\. `portifolio_manager.py`
+### 1\. `estruturas_dados.py`
+
+A fundação do projeto, contendo as classes `NoHash`, `ListaEncadeadaSimples` e `TabelaHashEncadeada` que foram implementadas do zero para este trabalho.
+
+
+### 2\. `portifolio_manager.py`
 
 Este é o cérebro da aplicação. A classe `PortfolioManager` encapsula toda a lógica de negócio:
 
@@ -47,23 +52,21 @@ Este é o cérebro da aplicação. A classe `PortfolioManager` encapsula toda a 
       * **Volatilidade:** Mede o risco de um ativo com base na variação de seus retornos.
       * **Beta:** Compara a volatilidade do ativo com a do mercado (Ibovespa).
 
-### 2\. `dashboard.py`
+### 3\. `dashboard.py`
 
 Este arquivo usa a biblioteca **Streamlit** para criar uma interface web interativa e amigável.
 
   * **Dashboard Principal:** Exibe um resumo financeiro com o saldo em conta, o valor total do portfólio e o lucro já realizado com vendas.
   * **Composição da Carteira:** Um gráfico de rosca mostra a distribuição percentual do valor de cada ativo na carteira.
   * **Minha Carteira de Ativos:** Uma tabela detalhada mostra todos os ativos, suas quantidades, preço médio, preço atual e os indicadores de análise (RSI, Volatilidade, Beta). A tabela utiliza cores para destacar o RSI (verde para sobrevendido, vermelho para sobrecomprado).
+![Screenshot_9-8-2025_18949_localhost](https://github.com/user-attachments/assets/8530c435-7512-4643-b7f1-97cd36050a33)
   * **Registrar Compra e Venda:** Formulários intuitivos que permitem ao usuário inserir o ticker do ativo e a quantidade para realizar uma operação. É possível buscar ativos por setor para facilitar a escolha.
+![Screenshot_9-8-2025_18177_localhost](https://github.com/user-attachments/assets/309932f0-c76e-48fa-9061-4107ab5f77f9)
   * **Análise Gráfica:** Uma seção dedicada a exibir um gráfico de candlestick interativo para qualquer ativo, permitindo a análise de seu histórico de preços com diferentes períodos e intervalos.
-
-### 3\. `estruturas_dados.py`
-
-A fundação do projeto, contendo as classes `NoHash`, `ListaEncadeadaSimples` e `TabelaHashEncadeada` que foram implementadas do zero para este trabalho.
-
+![Screenshot_9-8-2025_181823_localhost](https://github.com/user-attachments/assets/7820d9d5-4712-48d5-bb5f-cdb874b4aa00)
 -----
 
-## 🛠️ Como Executar o Projeto
+## Como Executar o Projeto
 
 1.  **Clone o repositório:**
 
