@@ -68,8 +68,7 @@ A fundação do projeto, contendo as classes `NoHash`, `ListaEncadeadaSimples` e
 1.  **Clone o repositório:**
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/murielnog/Gerenciador-de-Portifolio-de-Ativos
     ```
 
 2.  **Instale as dependências:**
