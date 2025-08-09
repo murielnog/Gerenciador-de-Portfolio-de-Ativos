@@ -59,11 +59,11 @@ Este arquivo usa a biblioteca **Streamlit** para criar uma interface web interat
   * **Dashboard Principal:** Exibe um resumo financeiro com o saldo em conta, o valor total do portfólio e o lucro já realizado com vendas.
   * **Composição da Carteira:** Um gráfico de rosca mostra a distribuição percentual do valor de cada ativo na carteira.
   * **Minha Carteira de Ativos:** Uma tabela detalhada mostra todos os ativos, suas quantidades, preço médio, preço atual e os indicadores de análise (RSI, Volatilidade, Beta). A tabela utiliza cores para destacar o RSI (verde para sobrevendido, vermelho para sobrecomprado).
-![Screenshot_9-8-2025_18949_localhost](https://github.com/user-attachments/assets/8530c435-7512-4643-b7f1-97cd36050a33)
+<img width="1908" height="826" alt="Snapshot_2025-08-09_18-28-15" src="https://github.com/user-attachments/assets/a9def1db-7b46-4be6-8e60-a7f1c4337975" />
   * **Registrar Compra e Venda:** Formulários intuitivos que permitem ao usuário inserir o ticker do ativo e a quantidade para realizar uma operação. É possível buscar ativos por setor para facilitar a escolha.
-![Screenshot_9-8-2025_18177_localhost](https://github.com/user-attachments/assets/309932f0-c76e-48fa-9061-4107ab5f77f9)
+<img width="1906" height="900" alt="Snapshot_2025-08-09_18-24-58" src="https://github.com/user-attachments/assets/caf0b743-9508-46c3-8060-10b37a45eb03" />
   * **Análise Gráfica:** Uma seção dedicada a exibir um gráfico de candlestick interativo para qualquer ativo, permitindo a análise de seu histórico de preços com diferentes períodos e intervalos.
-![Screenshot_9-8-2025_181823_localhost](https://github.com/user-attachments/assets/7820d9d5-4712-48d5-bb5f-cdb874b4aa00)
+<img width="1906" height="488" alt="Snapshot_2025-08-09_18-26-34" src="https://github.com/user-attachments/assets/7d88b875-baa3-49d6-acff-e2055ae2b53e" />
 -----
 
 ## Como Executar o Projeto
