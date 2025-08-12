@@ -259,7 +259,7 @@ if __name__ == "__main__":
         periodo_selecionado = st.selectbox(
             "Selecione o Período",
             ["1d", "5d","1mo", "3mo", "6mo", "1y", "2y", "5y", "max"],
-            index=3
+            index=0
         )
     with col33:
         intervalo_selecionado = st.selectbox(
